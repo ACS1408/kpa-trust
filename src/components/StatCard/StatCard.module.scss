@@ -1,0 +1,18 @@
+@import '../../Style/variable.scss';
+
+.card {
+    @include lg {
+        margin-bottom: size(40);
+    }
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+    &_label {
+        line-height: 1;
+        color: #7E828A;
+    }
+
+    &_value {
+        line-height: 1;
+    }
+}

@@ -1,0 +1,30 @@
+@import '../../Style/variable.scss';
+
+.card {
+    background-color: #fff;
+    padding: 30px 10px;
+    @include lg {
+        padding: size(40) size(20);
+    }
+    &_icon {
+        width: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        @include lg {
+            margin-bottom: size(30);
+        }
+    }
+
+    &_label {
+        line-height: 1;
+    }
+
+    &_value {
+        line-height: 1;
+        font-size: 30px;
+
+        @include lg {
+            font-size: size(48);
+        }
+    }
+}

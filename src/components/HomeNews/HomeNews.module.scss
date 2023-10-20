@@ -1,0 +1,18 @@
+@import '../../Style/variable.scss';
+
+.section {
+    --pt: 40px;
+    --pb: 0px;
+    padding: var(--pt) 0 var(--pb);
+
+    @include lg {
+        --pt: 50px;
+        --pb: 0px;
+    }
+}
+
+.row {
+    @include lg {
+        --bs-gutter-x: 40px;
+    }
+}

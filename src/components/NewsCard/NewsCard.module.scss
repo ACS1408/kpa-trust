@@ -1,0 +1,18 @@
+@import '../../Style/variable.scss';
+
+.card {
+    &_img {
+        --bs-aspect-ratio: 50%;
+        border-radius: 9px;
+        overflow: hidden;
+        box-shadow: 0px 10px 30px 0px rgba(183, 183, 183, 0.80);
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &_body {
+        padding-top: 20px;
+    }
+}

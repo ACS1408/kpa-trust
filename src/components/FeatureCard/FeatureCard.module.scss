@@ -1,0 +1,50 @@
+@import '../../Style/variable.scss';
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+
+    @include lg {
+        padding: size(20) 0;
+    }
+
+    &_img {
+        flex: 0 0 auto;
+        width: 50px;
+        position: relative;
+        @include lg {
+            width: size(80);
+        }
+
+        &::before {
+            --size: 50px;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: var(--size);
+            height: var(--size);
+            border-radius: 50%;
+            display: block;
+            background-color: #F4F2F1;
+
+            @include lg {
+                --size: 70px;
+            }
+        }
+    }
+
+    &_info {
+        padding-left: 40px;
+        width: 100%;
+        flex: 1 0;
+
+        p {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
+}

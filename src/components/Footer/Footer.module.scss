@@ -1,0 +1,29 @@
+@import '../../Style/variable.scss';
+
+.footer{
+    background-color: #eee;
+    &_title {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        @include lg {
+            font-size: size(22);
+        }
+    }
+
+    .logo {
+        --bs-aspect-ratio: 38%;
+        width: 160px;
+    }
+    &_top{
+        padding: 60px 0 50px;
+    }
+    &_bottom{
+        padding: 20px 0;
+        a {
+            color: #000;
+            font-size: 15px;
+            padding-left: 10px;
+        }
+    }
+}

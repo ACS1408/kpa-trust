@@ -1,0 +1,22 @@
+@import '../../Style/variable.scss';
+
+
+.section {
+    --pt: 60px;
+    --pb: 60px;
+    padding: var(--pt) 0 var(--pb);
+    background-color: #F4F2F1;
+    @include lg {
+        --pt: #{size(120)};
+        --pb: #{size(120)};
+    }
+
+    .card_wrap {
+        --bs-gutter-x: #{size(15)};
+            --bs-gutter-y: #{size(15)};
+        @include lg {
+            --bs-gutter-x: #{size(40)};
+            --bs-gutter-y: #{size(40)};
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../Style/variable.scss';
+
+.section {
+    --pt: 60px;
+    --pb: 0px;
+    padding: var(--pt) 0 var(--pb);
+
+    @include lg {
+        --pt: 110px;
+        --pb: 0px;
+    }
+}
+.card {
+    --px: 20px;
+    --py: 30px;
+    position: relative;
+    padding: var(--py) var(--px);
+    background-color: #000;
+    border-radius: 16px;
+    overflow: hidden;
+    @include lg {
+        --px: #{size(100)};
+        --py: #{size(60)}; 
+    }
+    img {
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,201 @@
+@import '../../Style/variable.scss';
+
+
+.section {
+    --pt: 110px;
+    --pb: 60px;
+    padding: var(--pt) 0 var(--pb);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    @include lg {
+        --pt: #{size(100)};
+    }
+
+    :global(.container) {
+        position: relative;
+        z-index: 1;
+    }
+
+
+    .banner {
+        position: relative;
+        max-width: 535px;
+
+        @include xxl {
+            max-width: 715px;
+        }
+
+        &_bg {
+            --bs-aspect-ratio: 111.4%;
+            -webkit-mask-image: url("/images/india.svg");
+            mask-image: url("/images/india.svg");
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+
+            -webkit-mask-size: 75%;
+            -webkit-mask-position: 25%;
+            will-change: mask-size, -webkit-mask-size;
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+
+
+        &_card_one {
+            position: absolute;
+            top: 12%;
+            left: 35%;
+padding: 10px;
+            z-index: 1;
+           
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0px 1px 14px 0px rgba(100, 100, 100, 0.20);
+@include md {
+    top: 33%;
+    left: 88%;
+}
+            @include lg {
+                padding: size(20);
+            }
+
+            .round {
+                display: flex;
+
+                &_item {
+                    --size: 30px;
+                    position: relative;
+                    flex: 0 0 auto;
+                    width: var(--size);
+                    height: var(--size);
+                    border-radius: 50%;
+                    font-size: 10px;
+                    font-weight: 400;
+                    margin-right: 5px;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+        &_card_two {
+            position: absolute;
+            top: 80%;
+            z-index: 1;
+            left: 8%;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0px 1px 14px 0px rgba(100, 100, 100, 0.20);
+            display: flex;
+            align-items: center;
+            z-index: 111;
+            padding: 10px;
+            @include lg {
+                padding: size(20);
+            }
+
+            &__img {
+                flex: 0 0 auto;
+                width: 40px;
+            }
+
+            &__info {
+                padding-left: 20px;
+                flex: 1 0;
+                width: 100%;
+            }
+
+            .track {
+                position: relative;
+                height: 4px;
+                border-radius: 10rem;
+                background: #F4F2F1;
+                overflow: hidden;
+                width: 150px;
+
+                &_progress {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 80%;
+                    height: 100%;
+                    background-color: $primary;
+                }
+            }
+        }
+
+        &_card_three {
+            position: absolute;
+            z-index: 1;
+          
+            
+    top: 65%;
+    left: 57%;
+
+            display: flex;
+            align-items: center;
+            @include md {
+                top: 70%;
+                left: 80%;
+            }
+
+            p {
+                font-size: size(22);
+                line-height: 1;
+            }
+        }
+    }
+}
+
+.bg {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+
+    img {
+        object-fit: cover;
+    }
+}
+
+
+.stroke {
+    display: block;
+
+    &_one {
+        top: -9%;
+        left: -12%;
+    }
+
+    &_two {
+        left: 55%;
+        top: 38%;
+    }
+
+    &_four {
+        top: 84%;
+        left: 13%;
+    }
+
+    &_five {
+        left: 8%;
+        top: 7%;
+    }
+}
+
+.fade {
+    display: block;
+    will-change: transform;
+}

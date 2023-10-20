@@ -1,0 +1,63 @@
+@import '../../Style/variable.scss';
+
+.card {
+    border-radius: 10px;
+    border: 1px solid #F4F2F1;
+    overflow: hidden;
+    --px: 30px;
+    --py: 30px;
+
+    &_img {
+        --bs-aspect-ratio: 72.97%;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &_body {
+        padding: 30px;
+        position: relative;
+        padding: 50px var(--px) var(--py);
+
+        &__btn {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            transform: translateY(-50%);
+            padding: 0 var(--px);
+        }
+    }
+}
+
+.progress {
+    margin-bottom: 20px;
+    &_amount {
+        line-height: 1;
+        font-size: size(16);
+        span {
+            font-size: 1rem;
+        }
+    }
+    &_percentage {
+        line-height: 1;
+    }
+    &_strip {
+        --data-percent: 100%;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #F4F2F1;
+        height: 4px;
+        &__track {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: var(--data-percent);
+            height: 100%;
+            background-color: $primary;
+        }
+    }
+}

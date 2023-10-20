@@ -1,0 +1,308 @@
+@import "variable.scss";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+$enable-dark-mode: false;
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+
+// Layout & components
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+// @import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+// @import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+// @import "~bootstrap/scss/card";
+@import "~bootstrap/scss/accordion";
+// @import "~bootstrap/scss/breadcrumb";
+// @import "~bootstrap/scss/pagination";
+// @import "~bootstrap/scss/badge";
+// @import "~bootstrap/scss/alert";
+// @import "~bootstrap/scss/progress";
+// @import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+// @import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+// @import "~bootstrap/scss/popover";
+// @import "~bootstrap/scss/carousel";
+// @import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/offcanvas";
+// @import "~bootstrap/scss/placeholders";
+
+// Helpers
+@import "~bootstrap/scss/helpers";
+
+// Utilities
+@import "~bootstrap/scss/utilities/api";
+
+
+
+
+html {
+    font-size: 16px;
+
+    @include xxl {
+        font-size: 18px;
+    }
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+
+
+// @media (-webkit-min-device-pixel-ratio: 1.25) {
+//     html {
+//         font-size: 16px;
+//     }
+//   }
+
+
+body {
+    font-family: var(--ff-tertiary);
+
+    @media (-webkit-min-device-pixel-ratio: 1.1) {}
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+
+
+    // &::-webkit-scrollbar {
+    //     width: 8px;
+    // }
+
+    // /* Track */
+    // &::-webkit-scrollbar-track {
+    //     background: #f3f3f3;
+    // }
+
+    // /* Handle */
+    // &::-webkit-scrollbar-thumb {
+    //     background: var(--primary);
+    // }
+
+    // /* Handle on hover */
+    // &::-webkit-scrollbar-thumb:hover {
+    //     background: var(--primary);
+    // }
+
+}
+
+
+.ff-primary {
+    font-family: var(--ff-primary);
+}
+
+.ff-secondary {
+    font-family: var(--ff-secondary);
+}
+
+.ff-tertiary {
+    font-family: var(--ff-tertiary);
+}
+
+a:hover {
+    color: var(--btn-color);
+}
+
+.ls-1 {
+    letter-spacing: -0.54px;
+}
+
+.ls-2 {
+    letter-spacing: -0.58px;
+}
+
+.dc-ls-lh {
+    letter-spacing: -0.6px;
+    line-height: 1.48;
+}
+
+.text-light {
+    color: var(--light);
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+// h1,h2{
+//     letter-spacing: -0.57px;
+// }
+
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+.stretched-link {
+    &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        content: "";
+    }
+}
+
+
+.ratio-1x1 {
+    --bs-aspect-ratio: 100%;
+}
+
+.ratio-16x9 {
+    --bs-aspect-ratio: calc(9 / 16 * 100%);
+
+}
+
+.ratio-4x3 {
+    --bs-aspect-ratio: calc(3 / 4 * 100%);
+
+}
+
+.ratio-21x9 {
+    --bs-aspect-ratio: calc(9 / 21 * 100%);
+
+}
+
+.h1 {
+    font-size: 35px;
+    @include lg {
+        font-size: size(65);
+    }
+}
+
+.h2 {
+    font-size: 28;
+    @include lg {
+        font-size: 2.9rem;
+    }
+    @include xxl {
+        font-size: size(60);
+    }
+}
+
+.h3 {
+    font-size: 22px;
+    @include lg {
+        font-size: size(40);
+    }
+}
+
+.h4 {
+font-size: 20px;
+    @include lg {
+        font-size: 1.4rem;
+    }
+    @include xxl {
+        font-size: size(30);
+    }
+}
+
+.h5 {
+    font-size: 16px;
+    @include lg {
+        font-size: size(18);
+    }
+}
+
+.h6 {
+    font-size: 14px;
+    @include lg {
+        font-size: size(16);
+    }
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.fw-semi {
+    font-weight: 600 !important;
+}
+
+.fw-medium {
+    font-weight: 500 !important;
+}
+
+.fw-regular {
+    font-weight: 400 !important;
+}
+
+.btn {
+    --bs-btn-padding-x: #{size(30)};
+    --bs-btn-padding-y: #{size(15)};
+    --bs-btn-font-size: #{size(16)};
+    --bs-btn-font-weight: 600;
+    --bs-btn-border-radius: 8px;
+    text-transform: uppercase;
+}
+.btn-outline-primary {
+    background-color: #fff;
+    --bs-btn-hover-color: #f5f5f5;
+}
+.btn-primary {
+    --bs-btn-color: #ffffff;
+}
+.p-main {
+    color:  #7E828A;
+    font-family: var(--ff-tertiary);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.stroke {
+    --stroke: 54px;
+    position: absolute;
+    width: var(--stroke);
+    mix-blend-mode: multiply;
+    z-index: 11;
+    @include md {
+        --stroke: 90px;
+    }
+    @include lg {
+        --stroke: 147px;
+    }
+    @include xxl {
+        --stroke: 227px;
+    }
+    &::before {
+        content: '';
+        padding-top: 50%;
+        display: block;
+        position: relative;
+    }
+}
+
+.container-small {
+    @include lg {
+        max-width: 1000px;
+    }
+    @include xxl {
+        max-width: 1200px;
+    }
+}
