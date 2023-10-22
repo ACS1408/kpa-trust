@@ -1,12 +1,12 @@
 "use client";
-import style from "./NewsListing.module.scss";
-import NewsCard from "../NewsCard";
+import style from "./EventsListing.module.scss";
+import EventCard from "../EventCard";
 
-const NewsListing = (props) => {
+const EventsListing = (props) => {
   return (
     <section className={style.section}>
       <div className="container">
-        <h2 className="h2 ff-primary fw-bold mb-lg-5">News & Stories</h2>
+        <h1 className="h1 ff-primary fw-bold mb-lg-5">Our Events</h1>
 
         <nav
           className={`${style.category_nav} d-flex align-items-center flex-nowrap`}
@@ -46,21 +46,29 @@ const NewsListing = (props) => {
           </div>
         </nav>
 
-        <div className={`row row-cols-lg-2 mb-lg-4 ${style.row}`}>
+        <div className={`row row-cols-lg-3 mb-lg-4 ${style.row}`}>
           <div>
-            <NewsCard />
+            <EventCard />
           </div>
 
           <div>
-            <NewsCard />
+            <EventCard />
           </div>
 
           <div>
-            <NewsCard />
+            <EventCard />
           </div>
 
           <div>
-            <NewsCard />
+            <EventCard />
+          </div>
+
+          <div>
+            <EventCard />
+          </div>
+
+          <div>
+            <EventCard />
           </div>
         </div>
 
@@ -72,4 +80,4 @@ const NewsListing = (props) => {
   );
 };
 
-export default NewsListing;
+export default EventsListing;

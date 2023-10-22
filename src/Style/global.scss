@@ -45,9 +45,6 @@ $enable-dark-mode: false;
 // Utilities
 @import "~bootstrap/scss/utilities/api";
 
-
-
-
 html {
     font-size: 16px;
 
@@ -60,25 +57,21 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
 // @media (-webkit-min-device-pixel-ratio: 1.25) {
 //     html {
 //         font-size: 16px;
 //     }
 //   }
 
-
 body {
     font-family: var(--ff-tertiary);
 
-    @media (-webkit-min-device-pixel-ratio: 1.1) {}
+    @media (-webkit-min-device-pixel-ratio: 1.1) {
+    }
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-
-
 
     // &::-webkit-scrollbar {
     //     width: 8px;
@@ -98,9 +91,7 @@ body {
     // &::-webkit-scrollbar-thumb:hover {
     //     background: var(--primary);
     // }
-
 }
-
 
 .ff-primary {
     font-family: var(--ff-primary);
@@ -169,24 +160,20 @@ ul {
     }
 }
 
-
 .ratio-1x1 {
     --bs-aspect-ratio: 100%;
 }
 
 .ratio-16x9 {
     --bs-aspect-ratio: calc(9 / 16 * 100%);
-
 }
 
 .ratio-4x3 {
     --bs-aspect-ratio: calc(3 / 4 * 100%);
-
 }
 
 .ratio-21x9 {
     --bs-aspect-ratio: calc(9 / 21 * 100%);
-
 }
 
 .h1 {
@@ -214,7 +201,7 @@ ul {
 }
 
 .h4 {
-font-size: 20px;
+    font-size: 20px;
     @include lg {
         font-size: 1.4rem;
     }
@@ -268,8 +255,16 @@ font-size: 20px;
 .btn-primary {
     --bs-btn-color: #ffffff;
 }
+.btn-white {
+    --bs-btn-color: #000;
+    --bs-btn-hover-color: #fff;
+    background-color: #fff;
+    &:hover {
+        background-color: $primary;
+    }
+}
 .p-main {
-    color:  #7E828A;
+    color: #7e828a;
     font-family: var(--ff-tertiary);
     font-size: 16px;
     line-height: 1.7;
@@ -291,7 +286,7 @@ font-size: 20px;
         --stroke: 227px;
     }
     &::before {
-        content: '';
+        content: "";
         padding-top: 50%;
         display: block;
         position: relative;
@@ -305,4 +300,16 @@ font-size: 20px;
     @include xxl {
         max-width: 1200px;
     }
+}
+.container-large {
+    @include lg {
+        max-width: 1400px;
+    }
+    @include xxl {
+        max-width: 1600px;
+    }
+}
+
+main {
+    padding-top: 90px;
 }

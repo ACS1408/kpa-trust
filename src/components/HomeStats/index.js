@@ -14,8 +14,8 @@ const HomeStats = (props) => {
                     </div>
                     <div className="col-lg-6">
                         <div className={style.card_wrap}>
-                            <StatCard label={"Total Donation"} value={"56,301"} />
-                            <StatCard label={"Total Raised"} value={"76,301"} />
+                            <StatCard label={"Total Donation"} value={"29,56,301"} icon="/images/coin-box.svg" />
+                            <StatCard label={"Total Raised"} value={"31,76,301"} icon="/images/coin-bag.svg" />
                         </div>
                     </div>
                 </div>

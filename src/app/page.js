@@ -10,7 +10,7 @@ import HomeStatistics from '@/components/HomeStatistics'
 
 export default function Home() {
   return (
-    <main>
+    <main className='pt-0'>
       <HomeBanner />
       <HomeAbout/>
       <HomeDonate/>

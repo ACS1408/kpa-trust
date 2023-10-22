@@ -1,12 +1,9 @@
-import HomeStats from '@/components/HomeStats'
-import DonateListing from '@/components/DonateListing'
-import NewsListing from '@/components/NewsListing'
+import EventsListing from "@/components/EventsListing";
 
-export default function Donate() {
+export default function Events() {
   return (
     <main>
-    <NewsListing/>
-      <HomeStats/>
+      <EventsListing />
     </main>
-  )
+  );
 }

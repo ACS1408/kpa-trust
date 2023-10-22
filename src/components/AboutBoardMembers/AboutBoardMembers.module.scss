@@ -1,0 +1,55 @@
+@import "../../Style/variable.scss";
+
+.section {
+    --pt: 65px;
+    --pb: 65px;
+    padding: var(--pt) 0 var(--pb);
+    background-color: #f4f2f1;
+    position: relative;
+    @include lg {
+        --pt: 10px;
+        --pb: 30px;
+    }
+    @include min(1600) {
+        --pt: 60px;
+        --pb: 50px;
+    }
+    .mask_top {
+        --bs-aspect-ratio: calc(548 / 1920 * 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(-25%);
+        z-index: -1;
+    }
+    .mask_bottom {
+        --bs-aspect-ratio: calc(548 / 1920 * 100%);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(25%);
+        z-index: -1;
+    }
+    &_title {
+        color: #001234;
+        margin-bottom: 80px;
+        max-width: 580px;
+        margin-inline: auto;
+    }
+    &_description {
+        font-size: 14px;
+        line-height: calc(22 / 14);
+        color: #525966;
+        max-width: 819px;
+        margin-inline: auto;
+    }
+    &_contents {
+        > * {
+            &:not(:last-child) {
+                margin-bottom: 60px;
+            }
+        }
+    }
+}

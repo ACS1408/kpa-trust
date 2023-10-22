@@ -1,66 +1,76 @@
 "use client";
-import style from "./NewsListing.module.scss";
-import NewsCard from "../NewsCard";
+import style from "./ProjectsListing.module.scss";
+import DonateCard from "../DonateCard";
 
-const NewsListing = (props) => {
+const ProjectsListing = (props) => {
   return (
     <section className={style.section}>
       <div className="container">
-        <h2 className="h2 ff-primary fw-bold mb-lg-5">News & Stories</h2>
+        <h1 className={`${style.section_title} h1 ff-primary text-center fw-bold mb-lg-5`}>
+          Join our Missions and make this world better a better place!
+        </h1>
 
         <nav
           className={`${style.category_nav} d-flex align-items-center flex-nowrap`}
         >
           <div className={`${style.category_nav__item} btn btn-primary`}>
-            All Categories
+            All Projects
           </div>
           <div
             className={`${style.category_nav__item} btn btn-outline-primary`}
           >
-            Recent News
+            Art & Culure
           </div>
           <div
             className={`${style.category_nav__item} btn btn-outline-primary`}
           >
-            Success Stories
+            Children
           </div>
           <div
             className={`${style.category_nav__item} btn btn-outline-primary`}
           >
-            Partnerships
+            Differently Abled
           </div>
           <div
             className={`${style.category_nav__item} btn btn-outline-primary`}
           >
-            Volunteer Spotlight
+            Disaster Relief
           </div>
           <div
             className={`${style.category_nav__item} btn btn-outline-primary`}
           >
-            In the Media
+            Education
           </div>
           <div
             className={`${style.category_nav__item} btn btn-outline-primary`}
           >
-            Community Outreach
+            Children
           </div>
         </nav>
 
-        <div className={`row row-cols-lg-2 mb-lg-4 ${style.row}`}>
+        <div className={`row row-cols-lg-3 mb-lg-4 ${style.row}`}>
           <div>
-            <NewsCard />
+            <DonateCard />
           </div>
 
           <div>
-            <NewsCard />
+            <DonateCard />
           </div>
 
           <div>
-            <NewsCard />
+            <DonateCard />
           </div>
 
           <div>
-            <NewsCard />
+            <DonateCard />
+          </div>
+
+          <div>
+            <DonateCard />
+          </div>
+
+          <div>
+            <DonateCard />
           </div>
         </div>
 
@@ -72,4 +82,4 @@ const NewsListing = (props) => {
   );
 };
 
-export default NewsListing;
+export default ProjectsListing;

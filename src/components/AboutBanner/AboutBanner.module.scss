@@ -1,0 +1,75 @@
+@import "../../Style/variable.scss";
+
+.section {
+    --pt: 65px;
+    --pb: 65px;
+    padding: var(--pt) 0 var(--pb);
+    @include lg {
+        --pt: 80px;
+        --pb: 80px;
+    }
+    @include min(1600) {
+        --pt: 120px;
+        --pb: 138px;
+    }
+    :global {
+        .container {
+            position: relative;
+        }
+    }
+    .about_banner {
+        &__backgrounds {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        &__bg {
+            position: absolute;
+            margin-bottom: 0;
+            &.ab_bg_1 {
+                top: 50%;
+                left: 0;
+                transform: translate(-50%, 0) scaleX(-1);
+            }
+            &.ab_bg_2 {
+                top: 0;
+                left: 50%;
+                transform: translate(100%, -60%) scaleX(-1);
+            }
+            &.ab_bg_3 {
+                top: 32%;
+                left: 33%;
+                transform: translate(-50%, -50%);
+                @include min(1600) {
+                    top: 40%;
+                }
+            }
+        }
+        &__images {
+            position: relative;
+        }
+        &__image {
+            --bs-aspect-ratio: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            max-width: 50%;
+            &.ab_image_2 {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                transform: translate(55%, 45%);
+                border: 10px solid #fff;
+            }
+        }
+        &__title {
+            color: #001234;
+            margin-bottom: 20px;
+        }
+        &__description {
+            color: #525966;
+        }
+    }
+}

@@ -2,16 +2,20 @@
 
 .section {
     --pt: 40px;
-    --pb: 40px;
+    --pb: 0px;
     padding: var(--pt) 0 var(--pb);
 
     @include lg {
         --pt: 60px;
-        --pb: 80px;
+        --pb: 0px;
     }
     .row {
         --bs-gutter-x: 60px;
         --bs-gutter-y: 60px;
+    }
+    &_title {
+        max-width: 819px;
+        margin-inline: auto;
     }
     .category_nav {
         column-gap: 40px;

@@ -1,4 +1,4 @@
-@import '../../Style/variable.scss';
+@import "../../Style/variable.scss";
 
 .card {
     position: relative;
@@ -8,6 +8,15 @@
 
         img {
             object-fit: cover;
+        }
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(to top, #061738, #06173800);
         }
     }
 
@@ -41,7 +50,7 @@
             text-decoration: none;
 
             &::before {
-                content: '';
+                content: "";
                 position: absolute;
                 left: 0;
                 width: 100%;
@@ -49,6 +58,16 @@
                 background-color: #fff;
                 bottom: 0;
             }
+        }
+    }
+    .event_date {
+        font-size: 15px;
+        color: #fff;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 9px;
         }
     }
 }

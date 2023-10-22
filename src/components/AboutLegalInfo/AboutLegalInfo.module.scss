@@ -1,0 +1,33 @@
+@import "../../Style/variable.scss";
+
+.section {
+    --pt: 65px;
+    --pb: 65px;
+    padding: var(--pt) 0 var(--pb);
+    background-color: #eee;
+    :global {
+        .container {
+            position: relative;
+            &::after {
+                content: "";
+                width: 100%;
+                height: 2px;
+                background-color: #d1d1d2;
+                position: absolute;
+                bottom: calc(var(--pb) * -1);
+                left: 0;
+            }
+        }
+    }
+    &_title {
+        color: #001234;
+        margin-bottom: 20px;
+    }
+    &_description {
+        font-size: 14px;
+        line-height: calc(22 / 14);
+        color: #525966;
+        max-width: 819px;
+        margin-inline: auto;
+    }
+}

@@ -1,0 +1,58 @@
+@import "../../Style/variable.scss";
+
+.card {
+    --bs-gutter-x: 60px;
+    &_img {
+        flex: 0 0 47%;
+        width: 47%;
+        figure {
+            --bs-aspect-ratio: calc(360 / 540 * 100%);
+            border-radius: 32px;
+            overflow: hidden;
+        }
+    }
+    &_body {
+        flex: 0 0 53%;
+        width: 53%;
+        max-width: 487px;
+    }
+    &_name {
+        margin-bottom: 10px;
+        color: #001234;
+        font-size: 30px;
+    }
+    &_designation {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: #7e828a;
+    }
+    &_description {
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        color: #525966;
+        font-size: 14px;
+        line-height: calc(22 / 14);
+        margin-bottom: 0;
+    }
+    &:global(.flex-row-reverse) {
+        .card_body {
+            margin-inline-start: auto;
+        }
+    }
+    &_button {
+        color: #1a2e54;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 20px;
+        background-color: transparent;
+        border: none;
+        transition: 0.3s ease color;
+        padding-left: 0;
+        padding-right: 0;
+        &:hover {
+            color: $primary;
+        }
+    }
+}
