@@ -1,0 +1,66 @@
+@import "../../Style/variable.scss";
+
+.section {
+    --pt: 40px;
+    --pb: 40px;
+    padding: var(--pt) 0 var(--pb);
+
+    @include lg {
+        --pt: 60px;
+        --pb: 80px;
+    }
+    :global {
+        .row {
+            --bs-gutter-x: 60px;
+            .col-lg-7 {
+                flex: 0 0 62%;
+                width: 62%;
+            }
+            .col-lg-5 {
+                flex: 0 0 38%;
+                width: 38%;
+            }
+        }
+    }
+    .event_detail {
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__details {
+            gap: 20px;
+            margin-bottom: 30px;
+            .detail_item {
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+                &__contents {
+                    margin-inline-start: 20px;
+                }
+            }
+            .item_title {
+                font-size: 15px;
+                color: #525966;
+                margin-bottom: 6px;
+            }
+            .item_description {
+                color: #001234;
+                font-size: 22px;
+                line-height: 1;
+            }
+        }
+        &__image {
+            --bs-aspect-ratio: calc(420 / 720 * 100%);
+            margin-bottom: 20px;
+        }
+        &__sidebar {
+            position: sticky;
+            top: calc(var(--pt) / 2 + 86.8px);
+            .related_events {
+                margin-top: 40px;
+                &__title {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
