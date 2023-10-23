@@ -1,0 +1,26 @@
+@import "../../Style/variable.scss";
+
+.section {
+    --pt: 40px;
+    --pb: 40px;
+    padding: var(--pt) 0 var(--pb);
+    background: #eee;
+    .news_detail_gallery {
+        &__slider {
+            :global {
+                .swiper-wrapper {
+                    transition-timing-function: linear !important;
+                }
+                .swiper-slide {
+                    width: 200px;
+                }
+            }
+            .gallery_image {
+                --bs-aspect-ratio: calc(120 / 200 * 100%);
+                width: 100%;
+                border-radius: 9px;
+                overflow: hidden;
+            }
+        }
+    }
+}

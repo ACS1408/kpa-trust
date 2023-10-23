@@ -1,0 +1,32 @@
+@import "../../Style/variable.scss";
+
+.kpa_breadcrumbs {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 4px 12px;
+    border-radius: 8px;
+    background-color: #f4f2f1;
+    display: inline-block;
+    &__wrap {
+        background-color: #fff;
+        // position: sticky;
+        // top: 80px;   
+        z-index: 2;
+    }
+    :global {
+        .breadcrumb {
+            margin-bottom: 0;
+        }
+        .breadcrumb-item {
+            a {
+                color: #001234;
+                font-family: var(--ff-tertiary);
+                text-decoration: none;
+                font-size: 15px;
+            }
+            &.active {
+                color: #7e828a;
+            }
+        }
+    }
+}

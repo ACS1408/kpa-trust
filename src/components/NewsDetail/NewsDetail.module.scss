@@ -12,6 +12,14 @@
     :global {
         .row {
             --bs-gutter-x: 60px;
+            .col-lg-7 {
+                flex: 0 0 62%;
+                width: 62%;
+            }
+            .col-lg-5 {
+                flex: 0 0 38%;
+                width: 38%;
+            }
         }
     }
     .news_detail {
@@ -34,6 +42,8 @@
         }
     }
     .related_stories {
+        position: sticky;
+        top: calc(var(--pt) + 86.8px);
         &__title {
             margin-bottom: 20px;
         }
