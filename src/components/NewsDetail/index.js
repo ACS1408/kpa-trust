@@ -2,7 +2,7 @@
 import Image from "next/image";
 import style from "./NewsDetail.module.scss";
 import { Col, Row } from "react-bootstrap";
-import NewsCard from "../NewsCard";
+import StoryCard from "../StoryCard";
 
 const NewsDetail = (props) => {
   return (
@@ -122,10 +122,10 @@ const NewsDetail = (props) => {
                 Related Stories
               </h2>
               <div className="mb-4">
-                <NewsCard />
+                <StoryCard />
               </div>
               <div>
-                <NewsCard />
+                <StoryCard />
               </div>
             </div>
           </Col>

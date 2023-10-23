@@ -1,0 +1,32 @@
+@import "../../Style/variable.scss";
+
+.card {
+    border: 1px solid #eee;
+    border-radius: 9px;
+    &_img {
+        --bs-aspect-ratio: 50%;
+        border-radius: 9px 9px 3px 3px;
+        overflow: hidden;
+        img {
+            object-fit: cover;
+        }
+    }
+    :global {
+        .h4 {
+            margin-bottom: 10px;
+            @include min-max(1200, 1599.98) {
+                font-size: size(27);
+            }
+        }
+        .p-main {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
+
+    &_body {
+        padding: 30px 20px 20px 20px;
+    }
+}

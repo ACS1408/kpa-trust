@@ -318,6 +318,14 @@ main {
     padding-top: 90px;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
 .admin-content-area {
     p {
         color: #7e828a;
@@ -326,8 +334,18 @@ main {
         line-height: 1.7;
         margin-bottom: 0;
         + p,
+        + h1,
+        + h2,
+        + h3,
+        + h4,
+        + h5,
+        + h6,
         + figure {
             margin-top: 20px;
+        }
+        + ul,
+        + ol {
+            margin-top: 5px;
         }
     }
     figure.ratio {
@@ -336,5 +354,59 @@ main {
         + p {
             margin-top: 20px;
         }
+    }
+    ul,
+    ol {
+        margin-bottom: 0;
+        li {
+            color: #7e828a;
+            font-family: var(--ff-tertiary);
+            font-size: 16px;
+            line-height: 1.7;
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+        + p,
+        + h1,
+        + h2,
+        + h3,
+        + h4,
+        + h5,
+        + h6,
+        + figure {
+            margin-top: 20px;
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--ff-secondary);
+        font-weight: $font-weight-semibold;
+        + ul,
+        + ol,
+        + p {
+            margin-top: 10px;
+        }
+    }
+}
+
+.form-group {
+    margin-bottom: 25px;
+    position: relative;
+    .form-control {
+        border-radius: 8px;
+        height: 48px;
+    }
+    .form-error {
+        color: #f00;
+        font-size: 13px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
     }
 }

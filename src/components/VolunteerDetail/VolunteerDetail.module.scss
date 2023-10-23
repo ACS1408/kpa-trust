@@ -22,7 +22,7 @@
             }
         }
     }
-    .news_detail {
+    .volunteer_detail {
         &__title {
             margin-bottom: 30px;
         }
@@ -37,15 +37,12 @@
             }
         }
         &__image {
-            --bs-aspect-ratio: calc(420 / 720 * 100%);
+            --bs-aspect-ratio: calc(540 / 720 * 100%);
             margin-bottom: 20px;
         }
-    }
-    .related_stories {
-        position: sticky;
-        top: calc(var(--pt) / 2 + 86.8px);
-        &__title {
-            margin-bottom: 20px;
+        &__form {
+            position: sticky;
+            top: calc(var(--pt) / 2 + 86.8px);
         }
     }
 }
