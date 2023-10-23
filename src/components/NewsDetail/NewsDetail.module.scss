@@ -1,0 +1,41 @@
+@import "../../Style/variable.scss";
+
+.section {
+    --pt: 40px;
+    --pb: 40px;
+    padding: var(--pt) 0 var(--pb);
+
+    @include lg {
+        --pt: 60px;
+        --pb: 80px;
+    }
+    :global {
+        .row {
+            --bs-gutter-x: 60px;
+        }
+    }
+    .news_detail {
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__details {
+            gap: 20px;
+            margin-bottom: 30px;
+            .detail_item {
+                color: #7e828a;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+        &__image {
+            --bs-aspect-ratio: calc(420 / 720 * 100%);
+            margin-bottom: 20px;
+        }
+    }
+    .related_stories {
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+}

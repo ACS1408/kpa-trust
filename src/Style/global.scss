@@ -317,3 +317,24 @@ ul {
 main {
     padding-top: 90px;
 }
+
+.admin-content-area {
+    p {
+        color: #7e828a;
+        font-family: var(--ff-tertiary);
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 0;
+        + p,
+        + figure {
+            margin-top: 20px;
+        }
+    }
+    figure.ratio {
+        --bs-aspect-ratio: calc(420 / 720 * 100%);
+        margin-bottom: 0;
+        + p {
+            margin-top: 20px;
+        }
+    }
+}
