@@ -1,0 +1,34 @@
+@import "../../Style/variable.scss";
+
+.purpose_card {
+    &__contents {
+        padding-inline-start: 80px;
+    }
+    &__image {
+        --bs-aspect-ratio: calc(360 / 640 * 100%);
+        max-width: 640px;
+        width: 100%;
+        -webkit-mask-image: url("/images/purpose-mask.svg");
+        mask-image: url("/images/purpose-mask.svg");
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+    }
+    &__title {
+        margin-bottom: 20px;
+        font-size: size(56);
+        position: relative;
+        display: inline-block;
+    }
+    &__illustration {
+        color: var(--illustration-color);
+        font-size: size(160);
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(7vw, -50%);
+        z-index: -1;
+    }
+}

@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import "../Style/global.scss";
-import { Barlow_Semi_Condensed, Barlow, Karla } from 'next/font/google'
+import { Barlow_Semi_Condensed, Barlow, Karla, Birthstone_Bounce } from 'next/font/google'
 import Footer from "@/components/Footer";
 
 const fontPrimary = Barlow_Semi_Condensed({
@@ -14,6 +14,10 @@ const fontHead = Barlow({
 const fontSecondary = Karla({
   subsets: ['latin'],
   weight: [ '300', '400', '500', '600', '700']
+})
+const fontBirthstone = Birthstone_Bounce({
+  subsets: ['latin'],
+  weight: ['400']
 })
 
 export const metadata = {
@@ -29,6 +33,7 @@ export default function RootLayout({ children }) {
         "--ff-primary": fontPrimary.style.fontFamily,
         "--ff-secondary": fontHead.style.fontFamily,
         "--ff-tertiary": fontSecondary.style.fontFamily,
+        "--ff-birthstone": fontBirthstone.style.fontFamily
       }} 
       >
         <Header/>
