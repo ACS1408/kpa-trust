@@ -37,7 +37,7 @@ const VolunteerDetail = (props) => {
                   and time can play a pivotal role in making a meaningful
                   impact.
                 </p>
-                <h2>Why Volunteer with KPA Trust</h2>
+                <h4>Why Volunteer with KPA Trust</h4>
                 <ol>
                   <li>
                     Community Building: Our volunteers are the heart and soul of
@@ -61,7 +61,7 @@ const VolunteerDetail = (props) => {
                     change and create a better world.
                   </li>
                 </ol>
-                <h2>How to Get Involved</h2>
+                <h4>How to Get Involved</h4>
                 <p>
                   Becoming a volunteer with KPA Trust is easy. Here's how you
                   can get started:
@@ -96,7 +96,7 @@ const VolunteerDetail = (props) => {
                     others to get involved and make a difference.
                   </li>
                 </ol>
-                <h2>Volunteer, Empower, and Inspire</h2>
+                <h4>Volunteer, Empower, and Inspire</h4>
                 <p>
                   KPA Trust's Volunteer Program is an opportunity to be part of
                   something bigger than ourselves. It's a chance to contribute

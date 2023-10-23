@@ -93,7 +93,7 @@ const EventDetail = (props) => {
                   public, creating a resounding success that will leave a
                   lasting impact on the community.
                 </p>
-                <h2>A Noble Mission</h2>
+                <h4>A Noble Mission</h4>
                 <p>
                   KPA has always stood at the forefront of humanitarian causes,
                   and this initiative is no exception. Our mission is clear: to
@@ -102,7 +102,7 @@ const EventDetail = (props) => {
                   kindness, and together, we can make a significant difference
                   in our community.
                 </p>
-                <h2>Calling All Volunteers and Supporters</h2>
+                <h4>Calling All Volunteers and Supporters</h4>
                 <p>
                   We invite volunteers and the public to join us in this noble
                   endeavor. Your participation is vital in making this event a
@@ -112,7 +112,7 @@ const EventDetail = (props) => {
                   save a life, and there's no greater gift than the gift of life
                   itself.
                 </p>
-                <h2>What to Expect</h2>
+                <h4>What to Expect</h4>
                 <p>
                   Our Blood Donation Camp will be a safe and organized event,
                   adhering to all necessary health and safety guidelines.
@@ -120,7 +120,7 @@ const EventDetail = (props) => {
                   smooth and comfortable experience for all donors. Refreshments
                   will be provided to help you recover after your donation.
                 </p>
-                <h2>How You Can Help</h2>
+                <h4>How You Can Help</h4>
                 <ul>
                   <li>
                     <b>Donate Blood:</b> The most direct way to contribute is by

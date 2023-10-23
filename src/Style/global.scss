@@ -330,8 +330,8 @@ input[type="number"]::-webkit-outer-spin-button {
     p {
         color: #7e828a;
         font-family: var(--ff-tertiary);
-        font-size: 16px;
-        line-height: 1.7;
+        font-size: var(--admin-content-size, 14px);
+        line-height: 1.5;
         margin-bottom: 0;
         + p,
         + h1,
@@ -361,8 +361,10 @@ input[type="number"]::-webkit-outer-spin-button {
         li {
             color: #7e828a;
             font-family: var(--ff-tertiary);
-            font-size: 16px;
-            line-height: 1.7;
+            font-size: var(--admin-content-size, 14px);
+            line-height: calc(22 / 14);
+        }
+        > li {
             &:not(:last-child) {
                 margin-bottom: 5px;
             }
@@ -390,6 +392,73 @@ input[type="number"]::-webkit-outer-spin-button {
         + ol,
         + p {
             margin-top: 10px;
+        }
+    }
+    ul {
+        padding-left: 15px;
+        > li {
+            list-style: disc;
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    ol {
+        > li {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    address {
+        font-size: var(--admin-content-size, 14px);
+    }
+
+    h1 {
+        font-size: 35px;
+        @include lg {
+            font-size: size(65);
+        }
+    }
+
+    h2 {
+        font-size: 28;
+        @include lg {
+            font-size: 2.9rem;
+        }
+        @include xxl {
+            font-size: size(60);
+        }
+    }
+
+    h3 {
+        font-size: 22px;
+        @include lg {
+            font-size: size(40);
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+        @include lg {
+            font-size: 1.4rem;
+        }
+        @include xxl {
+            font-size: size(30);
+        }
+    }
+
+    h5 {
+        font-size: 16px;
+        @include lg {
+            font-size: size(18);
+        }
+    }
+
+    h6 {
+        font-size: 14px;
+        @include lg {
+            font-size: size(16);
         }
     }
 }
