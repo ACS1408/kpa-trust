@@ -1,10 +1,13 @@
 @import "../../Style/variable.scss";
 
 .volunteer_form {
-    padding: 40px;
+    padding: 30px;
     background-color: #f4f2f1;
     border-radius: 20px;
     border: 1px solid #d1d1d2;
+    @include min(576) {
+        padding: 40px;
+    }
     &__title {
         margin-bottom: 20px;
     }

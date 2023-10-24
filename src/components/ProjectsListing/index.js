@@ -48,7 +48,7 @@ const ProjectsListing = (props) => {
           </div>
         </nav>
 
-        <div className={`row row-cols-lg-3 mb-lg-4 ${style.row}`}>
+        <div className={`row row-cols-lg-3 row-cols-sm-2 mb-lg-4 ${style.row}`}>
           <div>
             <DonateCard />
           </div>

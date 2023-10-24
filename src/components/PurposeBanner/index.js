@@ -26,7 +26,7 @@ const PurposeBanner = (props) => {
           </figure>
         </div>
         <div className="row">
-          <div className="col-lg-5">
+          <div className="col-xl-5">
             <div className={style.purpose_banner__images}>
               <figure
                 className={`${style.purpose_banner__image} ${style.pb_image_1} ratio`}
@@ -50,7 +50,7 @@ const PurposeBanner = (props) => {
               </figure>
             </div>
           </div>
-          <div className="col-lg-7">
+          <div className="col-xl-7">
             <h1
               className={`${style.purpose_banner__title} h1 ff-secondary fw-bold`}
             >

@@ -39,14 +39,14 @@ const ContributeBanner = (props) => {
               objectFit="cover"
             />
           </figure>
-          <div className="d-flex position-relative">
+          <div className="d-lg-flex position-relative">
             <h2
               className={`${style.contribute_banner__title} ff-secondary fw-bold`}
             >
               Everybody can contribute and make a difference!
             </h2>
             <div
-              className={`${style.contribute_banner__actions} d-flex align-items-center justify-content-center`}
+              className={`${style.contribute_banner__actions} d-flex align-items-center justify-content-lg-center`}
             >
               <Link href="#" className="btn btn-primary">
                 DONATE NOW

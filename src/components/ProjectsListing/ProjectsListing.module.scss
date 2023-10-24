@@ -10,8 +10,16 @@
         --pb: 0px;
     }
     .row {
-        --bs-gutter-x: 60px;
-        --bs-gutter-y: 60px;
+        --bs-gutter-x: 20px;
+        --bs-gutter-y: 20px;
+        @include min(992) {
+            --bs-gutter-x: 30px;
+            --bs-gutter-y: 30px;
+        }
+        @include min(1400) {
+            --bs-gutter-x: 60px;
+            --bs-gutter-y: 60px;
+        }
     }
     &_title {
         max-width: 819px;

@@ -34,9 +34,12 @@
     }
     &_title {
         color: #001234;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
         max-width: 580px;
         margin-inline: auto;
+        @include min(992) {
+            margin-bottom: 80px;
+        }
     }
     &_description {
         font-size: 14px;

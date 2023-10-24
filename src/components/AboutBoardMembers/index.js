@@ -5,7 +5,7 @@ import style from "./AboutBoardMembers.module.scss";
 const AboutBoardMembers = (props) => {
   return (
     <div className={style.section}>
-      <div className={`${style.mask_top} ratio`}>
+      <div className={`${style.mask_top} ratio d-lg-block d-none`}>
         <Image
           src="/images/about-bg-mask-top.png"
           fill
@@ -13,7 +13,7 @@ const AboutBoardMembers = (props) => {
           objectFit="cover"
         />
       </div>
-      <div className={`${style.mask_bottom} ratio`}>
+      <div className={`${style.mask_bottom} ratio d-lg-block d-none`}>
         <Image
           src="/images/about-bg-mask-bottom.png"
           fill

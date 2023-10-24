@@ -1,8 +1,8 @@
 @import "../../Style/variable.scss";
 
 .section {
-    --pt: 65px;
-    --pb: 65px;
+    --pt: 40px;
+    --pb: 40px;
     padding: var(--pt) 0 var(--pb);
     @include lg {
         --pt: 80px;
@@ -29,10 +29,16 @@
         &__bg {
             position: absolute;
             margin-bottom: 0;
+            @include max(991.98) {
+                display: none;
+            }
             &.ab_bg_1 {
                 top: 50%;
                 left: 0;
                 transform: translate(-50%, 0) scaleX(-1);
+                @include min-max(992, 1399.98) {
+                    transform: translate(-20%, 0) scaleX(-1);
+                }
             }
             &.ab_bg_2 {
                 top: 0;
@@ -50,6 +56,10 @@
         }
         &__images {
             position: relative;
+            @include min-max(992, 1399.98) {
+                margin-top: 75px;
+                margin-left: 30px;
+            }
         }
         &__image {
             --bs-aspect-ratio: 100%;
@@ -57,11 +67,15 @@
             overflow: hidden;
             max-width: 50%;
             &.ab_image_2 {
-                position: absolute;
-                top: 0%;
-                left: 0%;
-                transform: translate(55%, 45%);
                 border: 10px solid #fff;
+                margin-top: -25%;
+                transform: translateX(50%);
+                @include min(992) {
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    transform: translate(55%, 45%);
+                }
             }
         }
         &__title {

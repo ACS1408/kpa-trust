@@ -33,7 +33,7 @@ const AboutAvenues = (props) => {
               />
             </figure>
           </div>
-          <div className="row row-cols-lg-3">
+          <div className="row row-cols-lg-3 row-cols-md-2">
             <div>
               <AvenueCard
                 icon="/images/fundraiser.svg"

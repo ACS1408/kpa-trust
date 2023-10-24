@@ -1,7 +1,7 @@
 @import "../../Style/variable.scss";
 
 .section {
-    --pt: 65px;
+    --pt: 40px;
     --pb: 65px;
     padding: var(--pt) 0 var(--pb);
     @include lg {
@@ -14,8 +14,11 @@
     }
     .purpose_listing {
         display: flex;
-        row-gap: 80px;
+        row-gap: 60px;
         flex-wrap: wrap;
+        @include min(992) {
+            row-gap: 80px;
+        }
         > * {
             flex: 0 0 100%;
             width: 100%;

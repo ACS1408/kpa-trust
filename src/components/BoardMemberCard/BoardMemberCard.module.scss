@@ -3,8 +3,15 @@
 .card {
     --bs-gutter-x: 60px;
     &_img {
-        flex: 0 0 47%;
-        width: 47%;
+        flex: 0 0 100%;
+        width: 100%;
+        @include min(768) {
+            flex: 0 0 47%;
+            width: 47%;
+        }
+        @include max(767.98) {
+            margin-bottom: 20px;
+        }
         figure {
             --bs-aspect-ratio: calc(360 / 540 * 100%);
             border-radius: 32px;
@@ -12,19 +19,29 @@
         }
     }
     &_body {
-        flex: 0 0 53%;
-        width: 53%;
-        max-width: 487px;
+        flex: 0 0 100%;
+        width: 100%;
+        @include min(768) {
+            flex: 0 0 53%;
+            width: 53%;
+            max-width: 487px;
+        }
     }
     &_name {
         margin-bottom: 10px;
         color: #001234;
-        font-size: 30px;
+        font-size: 26px;
+        @include min(992) {
+            font-size: 30px;
+        }
     }
     &_designation {
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 10px;
         color: #7e828a;
+        @include min(992) {
+            font-size: 22px;
+        }
     }
     &_description {
         display: -webkit-box;

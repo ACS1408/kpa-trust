@@ -13,8 +13,11 @@
         --pb: 80px;
     }
     .contribute_banner {
-        padding: 100px 76px;
+        padding: 40px;
         position: relative;
+        @include min(992) {
+            padding: 100px 76px;
+        }
         &__backgrounds {
             position: absolute;
             top: 0;
@@ -22,6 +25,9 @@
             width: 100%;
             height: 100%;
             z-index: -1;
+            @include max(991.98) {
+                display: none;
+            }
         }
         &__bg {
             position: absolute;
@@ -64,15 +70,33 @@
         }
         &__title {
             max-width: 770px;
-            font-size: 45px;
+            font-size: 34px;
             color: #fff;
             margin-bottom: 0;
+            @include min(992) {
+                font-size: 45px;
+            }
             @include min(1600) {
                 font-size: 56px;
             }
+            @include max(991.98) {
+                margin-bottom: 30px;
+            }
         }
         &__actions {
-            gap: 40px;
+            @include max(424.98) {
+                flex-direction: column;
+                gap: 20px;
+                > * {
+                    width: 100%;
+                }
+            }
+            @include min(425) {
+                gap: 20px;
+            }
+            @include min(992) {
+                gap: 40px;
+            }
             > :global(.btn) {
                 white-space: nowrap;
             }

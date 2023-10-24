@@ -121,11 +121,13 @@ const NewsDetail = (props) => {
               >
                 Related Stories
               </h2>
-              <div className="mb-4">
-                <StoryCard />
-              </div>
-              <div>
-                <StoryCard />
+              <div className="row">
+                <div className="mb-4 col-lg-12 col-sm-6">
+                  <StoryCard />
+                </div>
+                <div className="col-lg-12 col-sm-6">
+                  <StoryCard />
+                </div>
               </div>
             </div>
           </Col>

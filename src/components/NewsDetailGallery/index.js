@@ -10,7 +10,7 @@ const NewsDetailGallery = (props) => {
   return (
     <section className={style.section}>
       <Swiper
-        spaceBetween={40}
+        spaceBetween={20}
         slidesPerView="auto"
         autoplay={{
           delay: 1,
@@ -20,6 +20,11 @@ const NewsDetailGallery = (props) => {
         loop={true}
         modules={[Autoplay]}
         className={style.news_detail_gallery__slider}
+        breakpoints={{
+          992: {
+            spaceBetween: 40,
+          },
+        }}
       >
         {galleryImages?.map((image, i) => {
           return (

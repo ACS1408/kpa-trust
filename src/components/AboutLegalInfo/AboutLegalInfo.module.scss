@@ -1,10 +1,14 @@
 @import "../../Style/variable.scss";
 
 .section {
-    --pt: 65px;
-    --pb: 65px;
+    --pt: 40px;
+    --pb: 40px;
     padding: var(--pt) 0 var(--pb);
     background-color: #eee;
+    @include lg {
+        --pt: 65px;
+        --pb: 65px;
+    }
     :global {
         .container {
             position: relative;

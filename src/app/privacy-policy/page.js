@@ -4,10 +4,10 @@ export default function PrivacyPolicy() {
   return (
     <main>
       <Container>
-        <h1 className="h3 mb-4 mt-5 pt-3 ff-secondary fw-bold">
+        <h1 className="h3 mb-4 mt-5 pt-lg-3 ff-secondary fw-bold">
           Privacy Policy
         </h1>
-        <div className="admin-content-area pb-5 mb-5">
+        <div className="admin-content-area pb-5 mb-lg-5">
           <ol>
             <li>
               <b>IMPORTANT INFORMATION AND WHO WE ARE</b>

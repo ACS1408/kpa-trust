@@ -151,11 +151,13 @@ const EventDetail = (props) => {
                 >
                   Related Events
                 </h2>
-                <div className="mb-4">
-                  <EventCard />
-                </div>
-                <div>
-                  <EventCard />
+                <div className="row">
+                  <div className="mb-4 col-lg-12 col-sm-6">
+                    <EventCard />
+                  </div>
+                  <div className="col-lg-12 col-sm-6">
+                    <EventCard />
+                  </div>
                 </div>
               </div>
             </div>

@@ -4,9 +4,12 @@
     background-color: #1a2e54;
     border-radius: 24px;
     overflow: hidden;
-    padding: 60px 40px;
+    padding: 40px 30px;
     color: #fff;
     text-align: center;
+    @include min(992) {
+        padding: 60px 40px;
+    }
     &_img {
         margin-bottom: 31px;
     }

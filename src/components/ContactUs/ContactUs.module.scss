@@ -12,18 +12,26 @@
     :global {
         .row {
             --bs-gutter-x: 60px;
-            .col-lg-7 {
-                flex: 0 0 62%;
-                width: 62%;
-            }
-            .col-lg-5 {
-                flex: 0 0 38%;
-                width: 38%;
+            @include min(992) {
+                .col-lg-7 {
+                    flex: 0 0 62%;
+                    width: 62%;
+                }
+                .col-lg-5 {
+                    flex: 0 0 38%;
+                    width: 38%;
+                }
             }
         }
     }
     .contact_title {
         margin-bottom: 30px;
+        @include max(991.98) {
+            font-size: size(34);
+        }
+        @include max(575.98) {
+            font-size: size(30);
+        }
     }
     .contact_description {
         margin-bottom: 20px;
@@ -47,5 +55,13 @@
         left: 0;
         transform: translateX(-65%) scale(-1);
         z-index: -1;
+        @include max(991.98) {
+            display: none;
+        }
+        + * {
+            @include max(991.98) {
+                margin-top: 30px;
+            }
+        }
     }
 }

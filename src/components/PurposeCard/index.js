@@ -16,7 +16,7 @@ const PurposeCard = ({
       } row align-items-center`}
     >
       <div className="col-lg-6">
-        <figure className={`${style.purpose_card__image} ratio mb-0`}>
+        <figure className={`${style.purpose_card__image} ratio mb-lg-0`}>
           <Image src={image} fill alt="" objectFit="cover" />
         </figure>
       </div>

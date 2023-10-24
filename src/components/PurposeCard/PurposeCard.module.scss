@@ -2,7 +2,9 @@
 
 .purpose_card {
     &__contents {
-        padding-inline-start: 80px;
+        @include min(992) {
+            padding-inline-start: 80px;
+        }
     }
     &__image {
         --bs-aspect-ratio: calc(360 / 640 * 100%);
@@ -14,6 +16,9 @@
         mask-repeat: no-repeat;
         -webkit-mask-size: cover;
         mask-size: cover;
+        @include max(991.98) {
+            margin-bottom: 60px;
+        }
     }
     &__title {
         margin-bottom: 20px;
@@ -23,12 +28,16 @@
     }
     &__illustration {
         color: var(--illustration-color);
-        font-size: size(160);
+        font-size: size(110);
         opacity: 0.5;
         position: absolute;
         top: 0;
         left: 0;
-        transform: translate(7vw, -50%);
+        transform: translate(15vw, -45%);
         z-index: -1;
+        @include min(992) {
+            font-size: size(160);
+            transform: translate(7vw, -50%);
+        }
     }
 }
