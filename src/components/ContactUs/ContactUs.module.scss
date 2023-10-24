@@ -41,4 +41,11 @@
             }
         }
     }
+    .contact_bg {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateX(-65%) scale(-1);
+        z-index: -1;
+    }
 }

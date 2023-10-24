@@ -46,7 +46,18 @@ const ContactUs = (props) => {
             </div>
           </Col>
           <Col lg={5}>
-            <ContactForm />
+            <div className="position-relative">
+              <figure className={style.contact_bg}>
+                <Image
+                  src="/images/shape1.svg"
+                  width={227}
+                  height={107}
+                  alt=""
+                  objectFit="cover"
+                />
+              </figure>
+              <ContactForm />
+            </div>
           </Col>
         </Row>
       </Container>
