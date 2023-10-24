@@ -1,4 +1,4 @@
-@import '../../Style/variable.scss';
+@import "../../Style/variable.scss";
 
 .section {
     --pt: 110px;
@@ -10,15 +10,16 @@
     max-width: 800px;
     padding: 40px;
     border-radius: 20px;
-    border: 1px solid var(--Border, #D1D1D2);
-    background: var(--Light-BG, #F4F2F1);
+    border: 1px solid var(--Border, #d1d1d2);
+    background: var(--Light-BG, #f4f2f1);
     &_group {
         margin-bottom: 20px;
     }
 
     &_btn {
         display: flex;
-
+        flex-wrap: wrap;
+        row-gap: 10px;
         &_item {
             flex: 0 0 auto;
             width: auto;
@@ -39,8 +40,8 @@
         left: -10%;
         top: -3%;
     }
-    &_five{
+    &_five {
         bottom: -10%;
-    right: -10%;
+        right: -10%;
     }
 }
