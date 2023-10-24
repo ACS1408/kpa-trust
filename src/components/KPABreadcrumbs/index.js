@@ -8,6 +8,7 @@ const KPABreadcrumbs = ({ navigation }) => {
     <div className={style.kpa_breadcrumbs__wrap}>
       <Container>
         <Breadcrumb className={style.kpa_breadcrumbs}>
+          <Image src="/images/icon-home.svg" width={15} height={15} alt="" className="icon-home" />
           {navigation?.map((nav, i) => {
             return (
               <Breadcrumb.Item

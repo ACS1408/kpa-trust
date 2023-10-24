@@ -1,0 +1,44 @@
+@import "../../Style/variable.scss";
+
+.section {
+    --pt: 40px;
+    --pb: 40px;
+    padding: var(--pt) 0 var(--pb);
+
+    @include lg {
+        --pt: 60px;
+        --pb: 80px;
+    }
+    :global {
+        .row {
+            --bs-gutter-x: 60px;
+            .col-lg-7 {
+                flex: 0 0 62%;
+                width: 62%;
+            }
+            .col-lg-5 {
+                flex: 0 0 38%;
+                width: 38%;
+            }
+        }
+    }
+    .contact_title {
+        margin-bottom: 30px;
+    }
+    .contact_description {
+        margin-bottom: 20px;
+    }
+    .contact_details {
+        .detail_item {
+            margin-bottom: 10px;
+            img {
+                margin-right: 10px;
+            }
+            a {
+                &:hover {
+                    color: var(--bs-link-hover-color-rgb);
+                }
+            }
+        }
+    }
+}

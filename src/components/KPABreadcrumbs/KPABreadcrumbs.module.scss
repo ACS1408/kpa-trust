@@ -12,6 +12,10 @@
     :global {
         .breadcrumb {
             margin-bottom: 0;
+            align-items: center;
+            .icon-home {
+                margin-right: 9px;
+            }
         }
         .breadcrumb-item {
             a {
@@ -29,6 +33,11 @@
                     &:hover {
                         color: $primary;
                     }
+                }
+            }
+            + .breadcrumb-item {
+                &::before {
+                    content: url("/images/icon-arrow-right.svg");
                 }
             }
         }

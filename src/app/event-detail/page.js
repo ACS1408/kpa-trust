@@ -1,7 +1,7 @@
 import KPABreadcrumbs from "@/components/KPABreadcrumbs";
 import EventDetail from "@/components/EventDetail";
 
-export default function News() {
+export default function Event() {
   return (
     <main>
       <KPABreadcrumbs navigation={navigation} />

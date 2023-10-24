@@ -45,6 +45,11 @@ $enable-dark-mode: false;
 // Utilities
 @import "~bootstrap/scss/utilities/api";
 
+:root {
+    --bs-link-color-rgb: #525966;
+    --bs-link-hover-color-rgb: #ff5e14;
+}
+
 html {
     font-size: 16px;
 
@@ -327,6 +332,11 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .admin-content-area {
+    a {
+        &:hover {
+            color: var(--bs-link-hover-color-rgb);
+        }
+    }
     p {
         color: #7e828a;
         font-family: var(--ff-tertiary);
@@ -470,6 +480,10 @@ input[type="number"]::-webkit-outer-spin-button {
         border-radius: 8px;
         height: 48px;
     }
+    textarea.form-control {
+        resize: none;
+        height: 80px;
+    }
     .form-error {
         color: #f00;
         font-size: 13px;
@@ -478,4 +492,8 @@ input[type="number"]::-webkit-outer-spin-button {
         left: 0;
         transform: translateY(100%);
     }
+}
+
+a {
+    text-decoration: none;
 }

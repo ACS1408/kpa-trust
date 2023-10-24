@@ -1,0 +1,11 @@
+@import "../../Style/variable.scss";
+
+.contact_form {
+    padding: 40px;
+    background-color: #f4f2f1;
+    border-radius: 20px;
+    border: 1px solid #d1d1d2;
+    &__title {
+        margin-bottom: 20px;
+    }
+}

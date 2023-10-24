@@ -2,7 +2,6 @@
 import Image from "next/image";
 import style from "./EventDetail.module.scss";
 import { Col, Container, Row } from "react-bootstrap";
-import StoryCard from "../StoryCard";
 import EventForm from "../EventForm";
 import EventCard from "../EventCard";
 
